@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+<h2>Welcome to Wedding.ly!</h2>
+<p>You're signed in! Let's get started on your planning!</p>
+<% else %>
+
+<div class="center hero-unit">
+    <h1>Welcome to Wedding.ly!</h1>
+
+    <h2>
+      Sign in to start planning for your big day!
+    </h2>
+
+    <%= link_to "Sign in now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>
